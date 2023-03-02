@@ -1,0 +1,85 @@
+﻿    body {
+
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+
+
+    .campos {
+        font-family: Arial;
+        margin: 0 auto;
+  
+    }
+
+    .campos  input {
+      margin: 12px auto;
+      border-radius: 15px;
+      background-color: #f0f0f0 ;
+      border: 1px solid transparent;
+      margin-top: 20px;
+      padding-left: 20px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      align-items: center;
+      font-family:Roboto;
+      font-weight: 300;
+      width: 250px;
+      height: 30px;
+      font-size: 14px;
+      color: black;
+      outline: 0px;
+
+
+    }
+
+        .campos button {
+            margin-top: 52px;
+            width: 575px;
+            height: 50px;
+            border-radius: 20px;
+            cursor: pointer;
+            background-color: #09cf0d;
+            border: #a86246;
+            color: white;
+            font-weight: 700;
+            font-family: Roboto;
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+
+    .teste {
+ 
+        color: red;
+        background-color: red;
+    }
+
+    #form {
+        background-color: red;
+    }
+
+
+    input[type=text]:focus {
+        outline: 1px solid #a86246;
+    }
+
+    #btnEnvia {
+    font-family: Arial;
+    }
+
+    
+
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        cursor: pointer;
+        filter: invert(0.8);
+        padding: 15px;
+    }
+
+    .forms {
+
+        display: flex;
+        margin: 0 auto;
+        width: 1160px;
+        height: 100%
+    }
