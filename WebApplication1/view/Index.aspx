@@ -14,42 +14,65 @@
 
 </head>
 <body>
-        <div>
-            <form class="form-container" id="form1" runat="server">
-        
 
-          
 
-                <div class="forms">
-                        <div class="campos">
+                <form class="form-container" id="form1" runat="server">
+                <div class="main-container">
 
-                            <div>
-                            <label for="username">Nomess Completo:</label>
-                            <asp:TextBox Id="TextName1" runat="server"/>
-                            <br />
+                        <div class="forms">
+                            <div class="campos-esquerda">
+
+                                <div>
+                                    <label for="username" >Nome completo:</label>
+                                    <br />
+                                    <asp:TextBox Id="CampoNome" runat="server" required/>
+                                    <br />
+                                </div>
+
+                                <br/>
+
+
+                                <div>
+                                    <label for="CPF">CPF:</label>
+                                    <br />
+                                    <asp:TextBox type="text" Id="CampoCPF" runat="server"/>
+                                </div>
+
+                                <br/>
+
+                                <div>
+                                    <label for="Date">Data de nascimento:</label>
+                                    <br />
+                                    <asp:TextBox Id="date" runat="server" placeholder="From" type="date"></asp:TextBox>
+                                </div>
+
+                                <br/>
+
+
+                                <div>
+                                </div>
+
                             </div>
+                            <div class="campos-direita">
+                                
+                                
+                                <div class="selectGender">
+                                      <label Id="texto">Selecione o genêro</label>
+                                        <br />
+                                      <select name="Genêro" id="lang">
+                                        <option value="c#">Masculino</option>
+                                        <option value="C++">Feminino</option>
+                                        <option value="C++">Outros</option>
 
-
-                    
-                          <%--  <label for="CPF">CPF</label>
-                            <asp:TextBox type="text" ID="TextBox1" runat="server" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" onkeyup="return validarTexto('TextName1')" />
-                            <br />--%>
-
-                            <div>
-                            <label for="username">Data</label>
-                            <asp:TextBox Id="date" runat="server" placeholder="From" type="date"></asp:TextBox>
+                                      </select>
+                                    <br />
+                                </div>
                             </div>
-
-                            <div>
-                            <button type="submit" id="btnEnvia">Enviar</button>
-                            </div>
-
                         </div>
-
-                    </div>
-                </form>
-                    </div>
-
+                        <asp:Button ID="Button1" runat="server" Text="Submit" BorderStyle="Solid" ToolTip="Submit"/>
+                
+                </div>
+                    </form>
 
        
 

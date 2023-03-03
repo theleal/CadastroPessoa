@@ -3,18 +3,16 @@
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
-    }
+    }   
 
 
 
-    .campos {
+    .campos-esquerda {
         font-family: Arial;
-        margin: 0 auto;
-  
     }
 
-    .campos  input {
-      margin: 12px auto;
+    .campos-esquerda  input {
+      margin: 0 auto;
       border-radius: 15px;
       background-color: #f0f0f0 ;
       border: 1px solid transparent;
@@ -34,21 +32,7 @@
 
     }
 
-        .campos button {
-            margin-top: 52px;
-            width: 575px;
-            height: 50px;
-            border-radius: 20px;
-            cursor: pointer;
-            background-color: #09cf0d;
-            border: #a86246;
-            color: white;
-            font-weight: 700;
-            font-family: Roboto;
-            font-size: 14px;
-            letter-spacing: 2px;
-        }
-
+   
     .teste {
  
         color: red;
@@ -64,22 +48,74 @@
         outline: 1px solid #a86246;
     }
 
-    #btnEnvia {
-    font-family: Arial;
-    }
-
     
 
     input[type="date"]::-webkit-calendar-picker-indicator {
         cursor: pointer;
         filter: invert(0.8);
         padding: 15px;
+        font-family: Arial;
     }
 
     .forms {
 
         display: flex;
         margin: 0 auto;
-        width: 1160px;
-        height: 100%
+        gap: 120px;
+        justify-content: center;
     }
+
+    .main-container {
+        padding-top: 80px;
+        width: 1160px;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container {
+        justify-content: center;
+        display:flex;
+        flex-direction: column;
+    }
+
+    #Button1 {
+        margin-top: 80px;
+        width: 520px;
+        height: 50px;
+        border-radius: 20px;
+        cursor: pointer;
+        background-color: #10e15b;
+        border: 0px;
+        color: white;
+        font-weight: 700;
+        font-family: Roboto;
+        font-size: 14px;
+        letter-spacing: 2px;
+        outline: 0px;
+        font-family: Arial;
+        text-transform: uppercase;
+    }
+
+
+    .selectGender label {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0 auto;
+        font-family: Arial;
+    }
+
+.selectGender select {
+    font-family: Arial;
+    width: 250px;
+    height: 52px;
+    background-color: #f0f0f0;
+    outline: none;
+    border: 0px;
+    border-radius: 15px;
+    padding-left: 15px;
+    cursor: pointer;
+    color: #344040;
+}
