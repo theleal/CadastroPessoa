@@ -1,51 +1,20 @@
 ﻿    body {
+        
 
+        font-family: Roboto;
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
     }   
 
-
-
-    .campos-esquerda {
-        font-family: Arial;
-    }
-
-    .campos-esquerda  input {
-      margin: 0 auto;
-      border-radius: 15px;
-      background-color: #f0f0f0 ;
-      border: 1px solid transparent;
-      margin-top: 20px;
-      padding-left: 20px;
-      padding-bottom: 10px;
-      padding-top: 10px;
-      align-items: center;
-      font-family:Roboto;
-      font-weight: 300;
-      width: 250px;
-      height: 30px;
-      font-size: 14px;
-      color: black;
-      outline: 0px;
-
-
-    }
-
    
-    .teste {
- 
-        color: red;
-        background-color: red;
-    }
-
     #form {
         background-color: red;
     }
 
 
     input[type=text]:focus {
-        outline: 1px solid #a86246;
+        outline: 1px solid #1C91FC;
     }
 
     
@@ -54,14 +23,21 @@
         cursor: pointer;
         filter: invert(0.8);
         padding: 15px;
-        font-family: Arial;
+        font-family: Roboto;
+    }
+
+    input[type="date"]:focus {
+        outline: 1px solid #1C91FC;
+    }
+
+    input[type="select"]:focus {
+        outline: 1px solid #1C91FC;
     }
 
     .forms {
-
         display: flex;
         margin: 0 auto;
-        gap: 120px;
+        gap: 80px;
         justify-content: center;
     }
 
@@ -87,7 +63,7 @@
         height: 50px;
         border-radius: 20px;
         cursor: pointer;
-        background-color: #10e15b;
+        background-color: #1C91FC;
         border: 0px;
         color: white;
         font-weight: 700;
@@ -100,22 +76,50 @@
     }
 
 
-    .selectGender label {
+   
+
+    .selectGender {
         display: flex;
-        justify-content: flex-start;
-        margin: 0 auto;
-        font-family: Arial;
+        flex-direction: column;
+
     }
 
-.selectGender select {
-    font-family: Arial;
-    width: 250px;
-    height: 52px;
-    background-color: #f0f0f0;
-    outline: none;
-    border: 0px;
-    border-radius: 15px;
-    padding-left: 15px;
-    cursor: pointer;
-    color: #344040;
-}
+    .selectGender select {
+
+        height: 52px;
+        font-family: Roboto;
+        width: 272px;
+        background-color: #f0f0f0;
+        outline: none;
+        border: 0px;
+        border-radius: 15px;
+        padding-left: 15px;
+        cursor: pointer;
+        color: #344040;
+
+    }
+
+    input {
+        border-radius: 15px;
+        background-color: #f0f0f0;
+        border: 1px solid transparent;
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        align-items: center;
+        font-family: Roboto;
+        font-weight: 300;
+        width: 250px;
+        height: 30px;
+        font-size: 14px;
+        color: black;
+        outline: 0px;
+        margin-bottom: 40px;
+    }
+
+    .password {
+        font-family: Roboto;
+    }
+
+  
