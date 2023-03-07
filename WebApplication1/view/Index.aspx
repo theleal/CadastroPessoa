@@ -20,6 +20,12 @@
     <form class="form-container" id="form1" runat="server">
         <div class="main-container">
 
+
+            <div class="title">
+
+                cadastre-se
+
+            </div>
             <div class="forms">
                 <div class="campos-esquerda">
 
@@ -46,7 +52,6 @@
 
                     <div class="selectGender">
                         <label id="labelgender">Selecione o genêro</label>
-                        <br />
                         <select name="Genêro" Id="Input_select">
                             <option value="Masculino">Masculino</option>
                             <option value="Feminino">Feminino</option>
@@ -94,6 +99,9 @@
                 </div>
             </div>
             <asp:Button ID="Button1" runat="server" Text="Submit" BorderStyle="Solid" ToolTip="Submit" />
+            <div class="buttonop">
+                Já possui uma conta? <a href="login.aspx" id="hiperlink"> &nbsp;Entrar</a>
+            </div>
 
         </div>
     </form>
